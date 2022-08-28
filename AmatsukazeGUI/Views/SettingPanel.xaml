@@ -84,6 +84,7 @@
                     <TextBlock HorizontalAlignment="Right" Height="16" Margin="0,6" Text="tsMuxeRパス"/>
                     <TextBlock HorizontalAlignment="Right" Height="16" Margin="0,6" Text="SCRename.vbsパス"/>
                     <TextBlock HorizontalAlignment="Right" Height="16" Margin="0,6" Text="AutoVfr.exeパス"/>
+                    <TextBlock HorizontalAlignment="Right" Height="16" Margin="0,6" Text="デフォルト出力パス"/>
                 </StackPanel>
                 <DockPanel Grid.Row="1" Grid.Column="1" Margin="10,0,0,0">
                     <StackPanel DockPanel.Dock="Right">
@@ -101,6 +102,7 @@
                         <Button Height="20" Content="クリア" Margin="4" ToolTip="{StaticResource tooltip}" Command="{Binding ClearTimelineEditorPathCommand}"/>
                         <Button Height="20" Content="クリア" Margin="4" ToolTip="{StaticResource tooltip}" Command="{Binding ClearChapterExepathCommand}"/>
                         <Button Height="20" Content="クリア" Margin="4" ToolTip="{StaticResource tooltip}" Command="{Binding ClearJoinLogoScpPathCommand}"/>
+                        <Border Height="28"/>
                         <Border Height="28"/>
                         <Border Height="28"/>
                     </StackPanel>
@@ -122,6 +124,7 @@
                         <TextBox Height="22" Margin="0,3" Text="{Binding Model.Setting.TsMuxeRPath, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" PreviewDragOver="TextBox_PreviewDragOver" Drop="TextBox_Drop"/>
                         <TextBox Height="22" Margin="0,3" Text="{Binding Model.Setting.SCRenamePath, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" PreviewDragOver="TextBox_PreviewDragOver" Drop="TextBox_Drop"/>
                         <TextBox Height="22" Margin="0,3" Text="{Binding Model.Setting.AutoVfrPath, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" PreviewDragOver="TextBox_PreviewDragOver" Drop="TextBox_Drop"/>
+                        <TextBox Height="22" Margin="0,3" Text="{Binding Model.Setting.DefaultOutputPath, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" PreviewDragOver="TextBox_PreviewDragOver" Drop="TextBox_Drop"/>
                     </StackPanel>
                 </DockPanel>
 
