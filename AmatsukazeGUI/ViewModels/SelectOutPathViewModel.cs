@@ -328,7 +328,16 @@ namespace Amatsukaze.ViewModels
 
         public void ResetOutPath()
         {
-            OutPath = Path.Combine(Item.DirPath, "encoded");
+            var defaultPath = Model.Setting.DefaultOutputPath;
+            if (string.IsNullOrEmpty(defaultPath))
+            {
+                OutPath = Path.Combine(Item.DirPath, "encoded");
+            }
+            else
+            {
+                var dirName = Path.GetFileName(Item.DirPath);
+                OutPath = defaultPath.Replace("${{dirName}}", dirName);
+            }
         }
         #endregion
 
