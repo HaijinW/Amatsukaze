@@ -92,6 +92,7 @@
                     <TextBlock HorizontalAlignment="Right" Height="16" Margin="0,6" Text="qaac.exeパス"/>
                     <TextBlock HorizontalAlignment="Right" Height="16" Margin="0,6" Text="fdkaac.exeパス"/>
                     <TextBlock HorizontalAlignment="Right" Height="16" Margin="0,6" Text="opusenc.exeパス"/>
+                    <TextBlock HorizontalAlignment="Right" Height="16" Margin="0,6" Text="デフォルト出力パス"/>
                 </StackPanel>
                 <DockPanel Grid.Row="1" Grid.Column="1" Margin="10,0,0,0">
                     <StackPanel DockPanel.Dock="Right">
@@ -113,6 +114,7 @@
                         <Button Height="20" Content="クリア" Margin="4" ToolTip="{StaticResource tooltip}" Command="{Binding ClearJoinLogoScpPathCommand}"/>
                         <Button Height="20" Content="クリア" Margin="4" ToolTip="{StaticResource tooltip}" Command="{Binding ClearNicoConvASSPathCommand}"/>
                         <Button Height="20" Content="クリア" Margin="4" ToolTip="{StaticResource tooltip}" Command="{Binding ClearTsReplacePathCommand}"/>
+                        <Border Height="28"/>
                         <Border Height="28"/>
                         <Border Height="28"/>
                     </StackPanel>
@@ -141,6 +143,7 @@
                         <TextBox Height="22" Margin="0,3" Text="{Binding Model.Setting.QaacPath, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" PreviewDragOver="TextBox_PreviewDragOver" Drop="TextBox_Drop"/>
                         <TextBox Height="22" Margin="0,3" Text="{Binding Model.Setting.FdkaacPath, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" PreviewDragOver="TextBox_PreviewDragOver" Drop="TextBox_Drop"/>
                         <TextBox Height="22" Margin="0,3" Text="{Binding Model.Setting.OpusEncPath, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" PreviewDragOver="TextBox_PreviewDragOver" Drop="TextBox_Drop"/>
+                        <TextBox Height="22" Margin="0,3" Text="{Binding Model.Setting.DefaultOutputPath, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" PreviewDragOver="TextBox_PreviewDragOver" Drop="TextBox_Drop"/>
                     </StackPanel>
                 </DockPanel>
 
