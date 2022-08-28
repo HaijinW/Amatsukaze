@@ -429,6 +429,9 @@ namespace Amatsukaze.Server
         public string AlwaysShowDisk { get; set; }
 
         [DataMember]
+        public string DefaultOutputPath { get; set; }
+
+        [DataMember]
         public int NumParallel { get; set; }
         [DataMember]
         public int AffinitySetting { get; set; } // 中身はProcessGroupKind
