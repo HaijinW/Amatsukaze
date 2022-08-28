@@ -2916,6 +2916,20 @@ namespace Amatsukaze.Models
         }
         #endregion
 
+        #region DefaultOutputPath変更通知プロパティ
+        public string DefaultOutputPath
+        {
+            get { return Model.DefaultOutputPath; }
+            set
+            {
+                if (Model.DefaultOutputPath == value)
+                    return;
+                Model.DefaultOutputPath = value;
+                RaisePropertyChanged();
+            }
+        }
+        #endregion
+
         #region AlwaysShowDisk変更通知プロパティ
         public string AlwaysShowDisk
         {
